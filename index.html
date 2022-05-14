@@ -38,11 +38,29 @@
             </div>
         </section>
     
-        <section class="relative px-12 lg:col-span-2 w-screen lg:w-full h-[35rem]" id="form">
-            <form class="flex flex-col justify-items-start lg:place-items-center pt-16 lg:pt-32" id="google-sheet">
+        <section class="relative px-12 lg:col-span-2 w-screen lg:w-full h-[50rem] lg:h-[35rem]" id="form">
+            <form class="flex flex-col lg:place-items-center pt-16 lg:pt-8" id="google-sheet">
                 <div class="w-[21rem] lg:w-[40rem]">
                     <h1 class="text-xl lg:text-2xl font-bold">The Kings' Union International</h1>
                     <p class="text-lg font-medium pb-4">Kindly provide</p>
+                    <div>
+                        <label for="location">Your name</label>
+                        <div>
+                            <input class="box" id="location" name="name" type="text" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="location">Your email</label>
+                        <div>
+                            <input class="box" id="location" name="email" type="text" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="location">Your phone number</label>
+                        <div>
+                            <input class="box" id="location" name="email" type="text" required>
+                        </div>
+                    </div>
                     <div>
                         <label for="location">Where you want to stay</label>
                         <div>
@@ -62,7 +80,7 @@
                     </div>
                 </div>
             </form>
-            <p class="absolute bottom-0 p-5 text-xs text-center lg:hidden opacity-50 w-[21rem]">© 2022 The Kings' Union International | Smart Beth</p>
+            <p class="absolute bottom-0 p-3 text-xs text-center lg:hidden opacity-50 w-[21rem]">© 2022 The Kings' Union International | Smart Beth</p>
         </section>
         <script type="text/javascript">
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxM6lSWR_hLpDd9evDihWpmX__Olv90HLpKtKNna1p8mxwXjsMzTxcDxWNYYYmSNlIfcg/exec'
