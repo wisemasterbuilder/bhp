@@ -482,6 +482,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-56{
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
@@ -514,6 +534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50rem;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-screen{
   width: 100vw;
 }
@@ -526,8 +550,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-\[21rem\]{
-  width: 21rem;
+.max-w-md{
+  max-width: 28rem;
 }
 
 .flex-col{
@@ -546,12 +570,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.p-5{
-  padding: 1.25rem;
+.bg-\[\#dfac1b\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 172 27 / var(--tw-bg-opacity));
 }
 
-.p-3{
-  padding: 0.75rem;
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-4{
@@ -562,6 +587,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pb-24{
@@ -607,6 +637,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-\[550\]{
@@ -732,13 +767,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
-  .md\:w-\[32rem\]{
-    width: 32rem;
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:px-56{
     padding-left: 14rem;
     padding-right: 14rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -763,6 +808,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
+  .lg\:grid{
+    display: grid;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -785,10 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-\[40rem\]{
-    width: 40rem;
   }
 
   .lg\:grid-cols-3{

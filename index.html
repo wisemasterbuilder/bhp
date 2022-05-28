@@ -12,9 +12,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-     
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body class="text-neutral-800 font-worksans">
      <main class="grid lg:grid-cols-3 lg:min-h-screen">
@@ -40,7 +38,7 @@
     
         <section class="relative px-12 lg:col-span-2 w-screen lg:w-full h-[50rem] lg:h-[35rem] md:px-56" id="form">
             <form class="flex flex-col lg:place-items-center pt-16 lg:pt-8" id="google-sheet">
-                <div class="w-[21rem] md:w-[32rem] lg:w-[40rem]">
+                <div class="max-w-md mx-auto md:w-full">
                     <h1 class="text-xl lg:text-2xl font-bold">The Kings' Union International</h1>
                     <p class="text-lg font-medium pb-4">Kindly provide</p>
                     <div>
@@ -80,16 +78,16 @@
                     </div>
                 </div>
             </form>
-            <p class="absolute bottom-0 p-3 text-xs text-center lg:hidden opacity-50 w-[21rem] md:w-[32rem]">© 2022 The Kings' Union International | Smart Beth</p>
+            <p class="absolute bottom-0 text-xs text-center lg:hidden opacity-50 max-w-md mx-auto">© 2022 The Kings' Union International | Smart Beth</p>
         </section>
         <script type="text/javascript">
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxM6lSWR_hLpDd9evDihWpmX__Olv90HLpKtKNna1p8mxwXjsMzTxcDxWNYYYmSNlIfcg/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbypAHx81-PjS297X26si8uXqko4NdvCIcG0IMx5FkmkiVTfsk0uzGZt_FByA5eeCXg0/exec'
                   const form = document.forms['google-sheet']
                 
                   form.addEventListener('submit', e => {
                     e.preventDefault()
                     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                      .then(response => alert("Shalom! Thank you for filling the form. A Beth Housing Representative will contact you in less than 48 hours."))
+                      .then(response => window.location = 'success.html')
                       .catch(error => console.error('Error!', error.message))
                   })
         </script>
